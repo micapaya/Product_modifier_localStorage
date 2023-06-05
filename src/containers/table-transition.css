@@ -1,0 +1,21 @@
+.table-transition-enter {
+    opacity: 0;
+    transform: translateY(100vh);
+}
+
+.table-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0vh);
+    transition:  1800ms;
+}
+
+.table-transition-exit {
+    opacity: 0;
+    transform: translateY(100vh);
+}
+
+.table-transition-exit-active {
+    opacity: 1;
+    transform: translateY(0vh);
+    transition:  1800ms;
+}

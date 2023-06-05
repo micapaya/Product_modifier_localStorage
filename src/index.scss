@@ -1,0 +1,28 @@
+// all files sass here 
+
+@import './style/functions.scss';
+@import './style/fontFace.scss';
+@import './style/variables.scss';
+@import './style/params.scss'; // #root is controled here ! 
+
+
+
+// LAYOUT 
+
+
+@import './style/layout/layout.scss';
+
+            // RESPONSIVE 
+            @import './style/layout/mediaScreen.scss';
+
+
+// CONTAINERS 
+
+@import './style/containers/menu_aside.scss';
+@import './style/containers/table.scss';
+@import './style/containers/product_page.scss';
+
+
+// COMPONENTS 
+
+@import './style/components/menuLogo.scss';

@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: pxToRem(16);
+}
+
+#root {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: pxToRem(350) 1fr;
+    @media screen and (max-width: 992px) {
+        display: block;
+    }
+}
+
+// disabled style of inputs
+
+// firefox
+
+input {
+    /* -moz-appearance: textfield; */
+    font-family: 'Roboto';
+    font-weight: bold;
+    border: 1px solid $blueMain;
+}
+
+select {
+    /* font-family: 'Roboto'; */
+    font-weight: bold;
+    border: 1px solid $blueMain;
+}
+
+// chrome
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+// opera
+
+input::-o-inner-spin-button,
+input::-o-outer-spin-button {
+    -o-appearance: none;
+    margin: 0;
+}

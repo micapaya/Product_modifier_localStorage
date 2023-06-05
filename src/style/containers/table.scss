@@ -1,0 +1,146 @@
+div.container_table {
+    width: 95%;
+    height: 58%;
+    overflow-y: scroll;
+    position: relative;
+    margin: auto;
+    margin-top: 0;
+}
+
+div.container_table::-webkit-scrollbar {
+    width: 5px;
+}
+
+select {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: none;
+    text-transform: capitalize;
+}
+
+option {
+    color: #564aff;
+}
+
+table {
+    width: 100%;
+    padding: 0.9rem;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0px 0.625rem;
+    margin-top: -1.5rem;
+    @media screen and(max-width: 530px) {
+            margin-top: -.2rem;
+        }
+}
+
+thead {
+    background: #564aff;
+    position: sticky;
+    top: 0px;
+    font-size: 1rem;
+    color: white;
+    z-index: 1;
+    height: 4rem;
+    box-shadow: 0px 2px 5px #0000001A;
+}
+
+.thead_items {
+    font-weight: bold;
+    span {
+        color: white;
+        font-weight: lighter;
+        font-family: 'Roboto';
+    }
+}
+
+th:first-child {
+    border-radius: 3px 0px 0px 0px;
+}
+
+th:last-child {
+    border-radius: 0px 3px 0px 0px;
+}
+
+th,
+td {
+    padding: 1rem;
+    @media screen and( max-width: 530px) {
+        padding: .3rem;
+    }
+}
+
+tbody {
+    position: relative;
+}
+
+tbody tr {
+    height: 4rem;
+    background: white;
+    box-shadow: 0px 2px 5px #0000001A;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+tbody tr:hover {
+    transform: scale(1.006);
+    box-shadow: 0px 2px 10px #0000001A;
+}
+
+td {
+    color: #707070;
+    font-size: 1rem;
+}
+
+td.table_product_price,
+td.table_product_price_VAT {
+    font-weight: normal;
+    text-align: right;
+}
+
+tbody tr td:nth-child(4),
+thead tr th:nth-child(4) {
+    text-align: right;
+}
+
+tbody tr td:nth-child(3),
+thead tr th:nth-child(3) {
+    text-align: right;
+}
+
+.table_product_name {
+    font-weight: bold;
+    width: pxToRem(900);
+}
+
+.cat_flags {
+    padding: 0.5rem;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    color: white;
+    border-radius: 1.03rem;
+    display: inline;
+    font-weight: normal;
+
+    &.orangeFlag {
+        background: $orangeFlag;
+    }
+
+    &.purpleFlag {
+        background: $purpleFlag;
+    }
+
+    &.turquoiseFlag {
+        background: $turquoiseFlag;
+    }
+
+    &.greenFlag {
+        background: $greenFlag;
+    }
+
+    &.greyFlag {
+        background: #707070;
+    }
+}

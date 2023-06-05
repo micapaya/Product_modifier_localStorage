@@ -1,0 +1,7 @@
+//////////////////////////////////////// PX to REM convertor ///////////////////////////////////
+
+
+@function pxToRem($value, $baseFontSize: 16) {
+    $remValue: ($value / $baseFontSize) * 1rem;
+    @return $remValue;
+}
